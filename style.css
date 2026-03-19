@@ -1,0 +1,68 @@
+body {
+    background-color: #111;
+    color: white;
+    font-family: Arial;
+}
+body {
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Navbar */
+.navbar {
+    background: transparent;
+    transition: 0.5s;
+}
+
+/* Banner */
+.banner {
+    height: 100vh;
+    background: 
+        linear-gradient(to top, rgba(0,0,0,0.9), transparent),
+        linear-gradient(to right, rgba(0,0,0,0.9), transparent),
+        url("images.jpg") center/cover no-repeat;
+
+    padding-left: 50px;
+}
+
+/* Movie Row */
+.movie-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+}
+
+.movie-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Movie Cards */
+.movie-card {
+    width: 200px;
+    border-radius: 8px;
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.movie-card:hover {
+    transform: scale(1.3);
+    z-index: 10;
+}
+.movie-wrapper {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: none;
+}
+
+.movie-wrapper:hover .overlay {
+    display: block;
+}

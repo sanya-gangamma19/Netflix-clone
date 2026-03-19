@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Who's Watching?</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body {
+    background: black;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.profile {
+    display: inline-block;
+    margin: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.profile img {
+    width: 120px;
+    border-radius: 10px;
+}
+
+.profile:hover {
+    transform: scale(1.1);
+}
+</style>
+</head>
+
+<body>
+
+<h1>Who's Watching?</h1>
+
+<div class="profile" onclick="goToHome()">
+  <img src="profile.jpg">
+  <p>Sujan</p>
+</div>
+
+<script>
+function goToHome() {
+    window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>
